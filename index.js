@@ -13,7 +13,7 @@ app.get('/version', (req, res) => {
 
 app.get('/', (req, res) => {
     const reqQuery = req.query;
-    console.log('#### req.query', req.query)
+    console.log('###ddddddd# req.query', req.query)
     res.send('Hello World!');
 });
 
