@@ -7,6 +7,10 @@ app.use(express.json());
 
 app.use('/users', userRouter);
 
+app.get('/version', (req, res) => {
+    res.send('version : 1.0.0');
+});
+
 app.get('/', (req, res) => {
     const reqQuery = req.query;
     console.log('#### req.query', req.query)
