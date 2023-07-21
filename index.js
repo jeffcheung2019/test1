@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
+
 app.post("/submit", (req, res) => {
     const reqBodyMsg = req.body.message;
     res.send(`submitted info : ${reqBodyMsg}`);
